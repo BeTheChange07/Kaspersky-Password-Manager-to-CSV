@@ -35,7 +35,7 @@ class Note:
 def main():
     
     argsParser = ArgumentParser(description='Kaspersky Password Manager conveter to CSV')
-    argsParser.add_argument('-i', '--input_file', help='Kaspersky Password Manager export file')
+    argsParser.add_argument('-i', '--input_file', default='***PUT INPUT FILE NAME HERE***.txt')
     argsParser.add_argument('-o', '--output_file', default='converted_passwords.csv', type=str, help='Custom CSV file name')
 
     args = argsParser.parse_args()
